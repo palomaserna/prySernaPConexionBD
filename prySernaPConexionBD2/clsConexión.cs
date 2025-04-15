@@ -21,35 +21,60 @@ namespace prySernaPConexionBD2
         {
             cadenaConexion = "Server=localhost;Database=Comercio;Trusted_Connection=True;";
         }
-       
 
 
 
+
+        /* public void Agregar(clsProducto Producto)
+         {
+             using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+             {
+                 conexion.Open();
+                 string query = "INSERT INTO Productos(Codigo, Nombre, Descripcion, Precio, Stock, CategoriaId)" +
+                     "VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @Stock, @CategoriaId)";
+
+                 SqlCommand comando = new SqlCommand(query, conexion);
+                 comando.Parameters.AddWithValue("@Codigo", Producto.Codigo);
+                 comando.Parameters.AddWithValue("@Nombre", Producto.Nombre);
+                 comando.Parameters.AddWithValue("@Descripcion", Producto.Descripcion);
+                 comando.Parameters.AddWithValue("@Precio", Producto.Precio);
+                 comando.Parameters.AddWithValue("@Stock", Producto.Stock);
+                 comando.Parameters.AddWithValue("@CategoriaId", Producto.CategoriaId);
+                 comando.ExecuteNonQuery();
+             }
+         *///}
         public void Agregar(clsProducto Producto)
         {
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            try
             {
-                conexion.Open();
-                string query = "INSERT INTO Productos(Codigo, Nombre, Descripcion, Precio, Stock, CategoriaId)" +
-                    "VALUES (@Codigo, @Nombre, @Descripcion, @Precio, @Stock, @CategoriaId)";
+                using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+                {
+                    conexion.Open();
+                    string query = "INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, CategoriaId) " +
+                                   "VALUES (@Nombre, @Descripcion, @Precio, @Stock, @CategoriaId)";
 
-                SqlCommand comando = new SqlCommand(query, conexion);
-                comando.Parameters.AddWithValue("@Codigo", Producto.Codigo);
-                comando.Parameters.AddWithValue("@Nombre", Producto.Nombre);
-                comando.Parameters.AddWithValue("@Descripcion", Producto.Descripcion);
-                comando.Parameters.AddWithValue("@Precio", Producto.Precio);
-                comando.Parameters.AddWithValue("@Stock", Producto.Stock);
-                comando.Parameters.AddWithValue("@CategoriaId", Producto.CategoriaId);
-                comando.ExecuteNonQuery();
+                    SqlCommand comando = new SqlCommand(query, conexion);
+                    comando.Parameters.AddWithValue("@Nombre", Producto.Nombre);
+                    comando.Parameters.AddWithValue("@Descripcion", Producto.Descripcion);
+                    comando.Parameters.AddWithValue("@Precio", Producto.Precio);
+                    comando.Parameters.AddWithValue("@Stock", Producto.Stock);
+                    comando.Parameters.AddWithValue("@CategoriaId", Producto.CategoriaId);
+
+                    comando.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al agregar producto: " + ex.Message);
             }
         }
 
 
-       
 
 
-        
-       public void CargarProductos(DataGridView dgv)
+
+
+        public void CargarProductos(DataGridView dgv)
         {
                 try
                 {

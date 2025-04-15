@@ -31,16 +31,10 @@
             this.lblInstrucción = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.numCodigo = new System.Windows.Forms.NumericUpDown();
-            this.dgvProductos = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProductosE = new System.Windows.Forms.DataGridView();
             this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductosE)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInstrucción
@@ -70,64 +64,15 @@
             this.numCodigo.TabIndex = 11;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
-            // dgvProductos
+            // dgvProductosE
             // 
-            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            this.dgvProductos.Location = new System.Drawing.Point(327, 153);
-            this.dgvProductos.Name = "dgvProductos";
-            this.dgvProductos.RowHeadersWidth = 62;
-            this.dgvProductos.RowTemplate.Height = 28;
-            this.dgvProductos.Size = new System.Drawing.Size(962, 387);
-            this.dgvProductos.TabIndex = 13;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Código";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descripción";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Precio";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Stock";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Categorías";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 150;
+            this.dgvProductosE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductosE.Location = new System.Drawing.Point(327, 153);
+            this.dgvProductosE.Name = "dgvProductosE";
+            this.dgvProductosE.RowHeadersWidth = 62;
+            this.dgvProductosE.RowTemplate.Height = 28;
+            this.dgvProductosE.Size = new System.Drawing.Size(962, 387);
+            this.dgvProductosE.TabIndex = 13;
             // 
             // btnEliminar
             // 
@@ -145,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1412, 660);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.dgvProductos);
+            this.Controls.Add(this.dgvProductosE);
             this.Controls.Add(this.numCodigo);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblInstrucción);
@@ -153,7 +98,7 @@
             this.Text = "frmEliminarProducto";
             this.Load += new System.EventHandler(this.frmEliminarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductosE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,13 +109,7 @@
         private System.Windows.Forms.Label lblInstrucción;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.NumericUpDown numCodigo;
-        private System.Windows.Forms.DataGridView dgvProductos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridView dgvProductosE;
         private System.Windows.Forms.Button btnEliminar;
     }
 }

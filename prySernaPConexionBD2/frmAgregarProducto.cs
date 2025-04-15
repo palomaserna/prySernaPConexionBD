@@ -60,7 +60,7 @@ namespace prySernaPConexionBD2
             {
                 clsProducto producto = new clsProducto();
                 clsConexión BD = new clsConexión();
-                producto.Codigo = Convert.ToInt32(numCodigo.Value);
+              //  producto.Codigo = Convert.ToInt32(numCodigo.Value);
                 producto.Nombre = txtNombre.Text;
                 producto.Descripcion = txtDescripcion.Text;
                 producto.Precio = Convert.ToInt32(numPrecio.Value);
@@ -73,11 +73,11 @@ namespace prySernaPConexionBD2
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"No se agrego el producto");
+                MessageBox.Show($"No se agrego el producto" + ex.Message);
             }
             numCodigo.Value = 0;
-            txtNombre.Text = "";
-            txtDescripcion.Text = "";
+            txtNombre.Clear();
+            txtDescripcion.Clear();
             numPrecio.Value = 0;
             numStock.Value = 0;
             cmbCategorias.SelectedIndex = -1;

@@ -20,7 +20,7 @@ namespace prySernaPConexionBD2
         private void frmEliminarProducto_Load(object sender, EventArgs e)
         {
             clsConexión BD = new clsConexión();
-            BD.CargarProductos(dgvProductos);
+            BD.CargarProductos(dgvProductosE);
             btnEliminar.Enabled = false;
         }
 
@@ -44,6 +44,7 @@ namespace prySernaPConexionBD2
 
                 clsConexión BD = new clsConexión();
                 BD.Eliminar(codigo);
+                BD.CargarProductos(dgvProductosE);
              } 
             catch (Exception ex)
              {
