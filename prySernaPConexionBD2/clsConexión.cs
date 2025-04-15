@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -20,6 +21,7 @@ namespace prySernaPConexionBD2
         {
             cadenaConexion = "Server=localhost;Database=Comercio;Trusted_Connection=True;";
         }
+       
 
 
 
@@ -46,37 +48,13 @@ namespace prySernaPConexionBD2
        
 
 
-        // READ - Obtener todos los productos
-        /* public List<clsProducto> ObtenerTodos()
-         {
-             List<clsProducto> lista = new List<clsProducto>();
-             using (SqlConnection conn = new SqlConnection(cadenaConexion))
-             {
-                 string query = "SELECT * FROM Productos";
-                 SqlCommand cmd = new SqlCommand(query, conn);
-                 conn.Open();
-                 SqlDataReader reader = cmd.ExecuteReader();
-                 while (reader.Read())
-                 {
-                     clsProducto producto = new clsProducto
-                     {
-                         Codigo = Convert.ToInt32(reader["Codigo"]),
-                         Nombre = reader["Nombre"].ToString(),
-                         Descripcion = reader["Descripcion"].ToString(),
-                         Precio = reader["Precio"].ToString(),
-                         Stock = Convert.ToInt32(reader["Stock"]),
-                         Categoria = reader["Categoria"].ToString(),
-                     };
-                     lista.Add(producto);
-                 }
-             }
-             return lista;
-        */ //}
-        public void CargarProductos(DataGridView dgv)
+        
+       public void CargarProductos(DataGridView dgv)
         {
                 try
                 {
                   string query = "SELECT Codigo, Nombre, Descripcion, Precio, Stock, CategoriaId FROM Productos";
+                  
                  using (SqlConnection conn = new SqlConnection(cadenaConexion))
                   using (SqlDataAdapter adapter = new SqlDataAdapter(query, conn))
                   {
@@ -92,33 +70,28 @@ namespace prySernaPConexionBD2
                 }
             
         }
+       
 
 
 
+        /*  public DataTable Obtener(DataGridView dgvProductos)
+          {
+              DataTable tabla = new DataTable();
+              string query = "SELECT Codigo, Nombre, Descripcion, Precio, Stock, Categoria FROM Productos";
 
+              using (SqlConnection conn = new SqlConnection(cadenaConexion))
+              {
+                  conn.Open();
+                  using (SqlCommand cmd = new SqlCommand(query, conn))
+                  {
+                      SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                      adapter.Fill(tabla);
+                      dgvProductos.DataSource = tabla;
+                  }
+              }
 
-
-
-
-
-      /*  public DataTable Obtener(DataGridView dgvProductos)
-        {
-            DataTable tabla = new DataTable();
-            string query = "SELECT Codigo, Nombre, Descripcion, Precio, Stock, Categoria FROM Productos";
-
-            using (SqlConnection conn = new SqlConnection(cadenaConexion))
-            {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    adapter.Fill(tabla);
-                    dgvProductos.DataSource = tabla;
-                }
-            }
-
-            return tabla;
-        *///}
+              return tabla;
+          *///}
 
         public void Modificar(clsProducto producto)
         {
