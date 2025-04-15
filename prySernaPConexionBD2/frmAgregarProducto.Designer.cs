@@ -140,6 +140,7 @@
             this.numCodigo.Name = "numCodigo";
             this.numCodigo.Size = new System.Drawing.Size(120, 26);
             this.numCodigo.TabIndex = 3;
+            this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
             // txtNombre
             // 
@@ -147,6 +148,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(127, 26);
             this.txtNombre.TabIndex = 4;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtDescripcion
             // 
@@ -154,6 +156,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(140, 26);
             this.txtDescripcion.TabIndex = 5;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // numStock
             // 
@@ -161,6 +164,7 @@
             this.numStock.Name = "numStock";
             this.numStock.Size = new System.Drawing.Size(120, 26);
             this.numStock.TabIndex = 7;
+            this.numStock.ValueChanged += new System.EventHandler(this.numStock_ValueChanged);
             // 
             // lblCodigo
             // 
@@ -222,6 +226,7 @@
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(120, 26);
             this.numPrecio.TabIndex = 16;
+            this.numPrecio.ValueChanged += new System.EventHandler(this.numPrecio_ValueChanged);
             // 
             // cmbCategorias
             // 
@@ -230,6 +235,7 @@
             this.cmbCategorias.Name = "cmbCategorias";
             this.cmbCategorias.Size = new System.Drawing.Size(121, 28);
             this.cmbCategorias.TabIndex = 17;
+            this.cmbCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbCategorias_SelectedIndexChanged);
             // 
             // frmAgregarProducto
             // 

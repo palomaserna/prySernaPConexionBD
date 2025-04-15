@@ -139,6 +139,7 @@
             this.numCodigo.Name = "numCodigo";
             this.numCodigo.Size = new System.Drawing.Size(120, 26);
             this.numCodigo.TabIndex = 16;
+            this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
             // lblNombre
             // 
@@ -155,6 +156,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(127, 26);
             this.txtNombre.TabIndex = 18;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblDescripción
             // 
@@ -180,6 +182,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(140, 26);
             this.txtDescripcion.TabIndex = 21;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // numPrecio
             // 
@@ -187,6 +190,7 @@
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(120, 26);
             this.numPrecio.TabIndex = 22;
+            this.numPrecio.ValueChanged += new System.EventHandler(this.numPrecio_ValueChanged);
             // 
             // lblStock
             // 
@@ -212,6 +216,7 @@
             this.numStock.Name = "numStock";
             this.numStock.Size = new System.Drawing.Size(120, 26);
             this.numStock.TabIndex = 25;
+            this.numStock.ValueChanged += new System.EventHandler(this.numStock_ValueChanged);
             // 
             // cmbCategorias
             // 
@@ -220,6 +225,7 @@
             this.cmbCategorias.Name = "cmbCategorias";
             this.cmbCategorias.Size = new System.Drawing.Size(121, 28);
             this.cmbCategorias.TabIndex = 26;
+            this.cmbCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbCategorias_SelectedIndexChanged);
             // 
             // btnModificar
             // 
@@ -229,6 +235,7 @@
             this.btnModificar.TabIndex = 27;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // frmModificarProducto
             // 
@@ -252,6 +259,7 @@
             this.Controls.Add(this.lblInstrucción);
             this.Name = "frmModificarProducto";
             this.Text = "frmModificarProducto";
+            this.Load += new System.EventHandler(this.frmModificarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();

@@ -21,8 +21,7 @@ namespace prySernaPConexionBD2
 
         private void frmAgregarProducto_Load(object sender, EventArgs e)
         {
-            
-
+            btnAgregar.Enabled = false;
             clsConexión BD = new clsConexión();
             BD.CargarProductos(dgvProductos);
 
@@ -34,8 +33,24 @@ namespace prySernaPConexionBD2
                 SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adaptador.Fill(dt);
+                cmbCategorias.DataSource = dt;
+                cmbCategorias.DisplayMember = "Nombre";
+                cmbCategorias.ValueMember = "Id";
 
-               
+
+            }
+        }
+        
+
+        private void ValidarDatos()
+        {
+            if (numCodigo.Value > 0 && txtNombre.Text != "" && txtDescripcion.Text != ""&& numPrecio.Value > 0 && numStock.Value > 0)
+            {
+                btnAgregar.Enabled = true;
+            }
+            else
+            {
+                btnAgregar.Enabled = false;
             }
         }
 
@@ -60,11 +75,49 @@ namespace prySernaPConexionBD2
             {
                 MessageBox.Show($"No se agrego el producto");
             }
+            numCodigo.Value = 0;
             txtNombre.Text = "";
             txtDescripcion.Text = "";
             numPrecio.Value = 0;
             numStock.Value = 0;
             cmbCategorias.SelectedIndex = -1;
+        }
+
+        private void cmbCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCategorias.SelectedIndex != -1)
+            {
+                btnAgregar.Enabled = true;
+            }
+            else
+            {
+                btnAgregar.Enabled = false;
+            }
+        }
+
+        private void numCodigo_ValueChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void numPrecio_ValueChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void numStock_ValueChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
         }
     }
 }
