@@ -20,6 +20,15 @@ namespace prySernaPConexionBD2
         private void frmIncio_Load(object sender, EventArgs e)
         {
             clsConexión BD=new clsConexión();
+            this.KeyPreview = true;
+            this.KeyDown += TeclaESC;
+        }
+        private void TeclaESC(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close(); // Cierra el formulario al presionar ESC
+            }
         }
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)

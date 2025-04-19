@@ -36,11 +36,18 @@ namespace prySernaPConexionBD2
                 cmbCategorias.DataSource = dt;
                 cmbCategorias.DisplayMember = "Nombre";
                 cmbCategorias.ValueMember = "Id";
-
+                this.KeyPreview = true;
+                this.KeyDown += TeclaESC;
 
             }
         }
-        
+        private void TeclaESC(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close(); // Cierra el formulario al presionar ESC
+            }
+        }
 
         private void ValidarDatos()
         {

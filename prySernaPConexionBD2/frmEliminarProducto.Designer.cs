@@ -71,6 +71,7 @@
             this.dgvProductosE.GridColor = System.Drawing.Color.Gray;
             this.dgvProductosE.Location = new System.Drawing.Point(24, 209);
             this.dgvProductosE.Name = "dgvProductosE";
+            this.dgvProductosE.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

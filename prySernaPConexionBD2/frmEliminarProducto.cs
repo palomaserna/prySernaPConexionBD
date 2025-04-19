@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.CompilerServices.RuntimeHelpers;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace prySernaPConexionBD2
 {
@@ -22,7 +24,19 @@ namespace prySernaPConexionBD2
             clsConexión BD = new clsConexión();
             BD.CargarProductos(dgvProductosE);
             btnEliminar.Enabled = false;
+            this.KeyPreview = true;
+            this.KeyDown += TeclaESC;
+
         }
+        private void TeclaESC(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close(); // Cierra el formulario al presionar ESC
+            }
+        }
+
+
 
         private void ValidarDatos()
         {
