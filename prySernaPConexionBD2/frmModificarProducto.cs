@@ -119,5 +119,10 @@ namespace prySernaPConexionBD2
                 btnModificar.Enabled = false;
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
