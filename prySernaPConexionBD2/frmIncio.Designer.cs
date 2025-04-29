@@ -54,7 +54,7 @@
             this.contactosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1195, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1195, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,8 +63,8 @@
             this.comercioToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comercioToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.comercioToolStripMenuItem.Name = "comercioToolStripMenuItem";
-            this.comercioToolStripMenuItem.Size = new System.Drawing.Size(115, 29);
-            this.comercioToolStripMenuItem.Text = "COMERCIO:";
+            this.comercioToolStripMenuItem.Size = new System.Drawing.Size(111, 32);
+            this.comercioToolStripMenuItem.Text = "COMERCIO";
             // 
             // productosToolStripMenuItem
             // 
@@ -75,7 +75,7 @@
             this.productosToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(123, 29);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(123, 32);
             this.productosToolStripMenuItem.Text = "PRODUCTOS";
             // 
             // agregarToolStripMenuItem
@@ -84,7 +84,7 @@
             this.agregarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.agregarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("agregarToolStripMenuItem.Image")));
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
@@ -94,7 +94,7 @@
             this.eliminarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -104,7 +104,7 @@
             this.modificarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.modificarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("modificarToolStripMenuItem.Image")));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
             this.modificarToolStripMenuItem.Text = "Modificar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
@@ -117,25 +117,25 @@
             this.contactosToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.contactosToolStripMenuItem.Name = "contactosToolStripMenuItem";
-            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
+            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(120, 32);
             this.contactosToolStripMenuItem.Text = "CONTACTOS";
             // 
             // agregarToolStripMenuItem1
             // 
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
-            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.agregarToolStripMenuItem1.Text = "Agregar";
             // 
             // eliminarToolStripMenuItem1
             // 
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
             // 
             // modificarToolStripMenuItem1
             // 
             this.modificarToolStripMenuItem1.Name = "modificarToolStripMenuItem1";
-            this.modificarToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.modificarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.modificarToolStripMenuItem1.Text = "Modificar";
             // 
             // frmIncio

@@ -48,5 +48,7 @@ namespace prySernaPConexionBD2
             frmModificarProducto v=new frmModificarProducto();
             v.ShowDialog();
         }
+
+       
     }
 }
