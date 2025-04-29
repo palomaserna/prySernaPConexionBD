@@ -26,14 +26,13 @@ namespace prySernaPConexionBD2
             this.KeyPreview = true;
             this.KeyDown += TeclaESC;
             btnEntrar.Enabled = false;
+            btnRegistro.Enabled = false;
         }
 
       
 
         private void btnEntrar_Click_1(object sender, EventArgs e)
         {
-            
-
             clsInicioSesión Inicio = new clsInicioSesión();
             clsConexión conexión = new clsConexión();
 
@@ -59,7 +58,26 @@ namespace prySernaPConexionBD2
                 MessageBox.Show("Demasiados intentos fallidos");
                 Application.Exit();
             }
+            txtUsuario.Clear();
+            txtContraseña.Clear();
 
+        }
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                clsConexión conexión = new clsConexión();
+                clsInicioSesión Inicio = new clsInicioSesión();
+                Inicio.Usuario = txtUsuario.Text;
+                Inicio.Contraseña = txtContraseña.Text;
+                conexión.AgregarUsuario(Inicio);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"No se creo el usuario" + ex.Message);
+            }
+            txtUsuario.Clear();
+            txtContraseña.Clear();
         }
 
         private void TeclaESC(object sender, KeyEventArgs e)
@@ -74,9 +92,11 @@ namespace prySernaPConexionBD2
             if(txtUsuario.Text != "" && txtContraseña.Text != "")
             {
                 btnEntrar.Enabled = true;
+                btnRegistro.Enabled = true;
             }
             else
             {
+                btnRegistro.Enabled = false;
                 btnEntrar.Enabled = false;
             }
         }
@@ -91,9 +111,6 @@ namespace prySernaPConexionBD2
             ValidarDatos();
         }
 
-        private void btnRegistro_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -53,7 +53,7 @@ namespace prySernaPConexionBD2
                 using (SqlConnection conexion = new SqlConnection(cadenaConexion))
                 {
                     conexion.Open();
-                    string query = "INSERT INTO Usuarios (Nombre, Contraseña)" + "VALUES(@Usuario, @Contraseña)";
+                    string query = "INSERT INTO Usuarios (Usuario, Contraseña)" + "VALUES(@Usuario, @Contraseña)";
                     SqlCommand comando = new SqlCommand(query, conexion);
                     comando.Parameters.AddWithValue("@Usuario", Usuario.Usuario);
                     comando.Parameters.AddWithValue("@Contraseña", Usuario.Contraseña);
