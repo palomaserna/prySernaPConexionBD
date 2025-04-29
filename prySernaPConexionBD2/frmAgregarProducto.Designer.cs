@@ -88,7 +88,7 @@
             this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductos.RowHeadersWidth = 62;
             this.dgvProductos.RowTemplate.Height = 28;
-            this.dgvProductos.Size = new System.Drawing.Size(739, 387);
+            this.dgvProductos.Size = new System.Drawing.Size(695, 387);
             this.dgvProductos.TabIndex = 0;
             this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
@@ -120,9 +120,9 @@
             this.groupBox1.Controls.Add(this.lblPrecio);
             this.groupBox1.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.groupBox1.Location = new System.Drawing.Point(262, 80);
+            this.groupBox1.Location = new System.Drawing.Point(74, 82);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 299);
+            this.groupBox1.Size = new System.Drawing.Size(553, 299);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Campos";
@@ -149,7 +149,7 @@
             // cmbCategorias
             // 
             this.cmbCategorias.FormattingEnabled = true;
-            this.cmbCategorias.Location = new System.Drawing.Point(193, 243);
+            this.cmbCategorias.Location = new System.Drawing.Point(312, 237);
             this.cmbCategorias.Name = "cmbCategorias";
             this.cmbCategorias.Size = new System.Drawing.Size(121, 28);
             this.cmbCategorias.TabIndex = 26;
@@ -159,7 +159,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblNombre.Location = new System.Drawing.Point(189, 22);
+            this.lblNombre.Location = new System.Drawing.Point(308, 31);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(66, 22);
             this.lblNombre.TabIndex = 17;
@@ -170,7 +170,7 @@
             this.lblCategorías.AutoSize = true;
             this.lblCategorías.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorías.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCategorías.Location = new System.Drawing.Point(189, 213);
+            this.lblCategorías.Location = new System.Drawing.Point(312, 197);
             this.lblCategorías.Name = "lblCategorías";
             this.lblCategorías.Size = new System.Drawing.Size(89, 22);
             this.lblCategorías.TabIndex = 24;
@@ -185,7 +185,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(193, 56);
+            this.txtNombre.Location = new System.Drawing.Point(312, 56);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(127, 27);
             this.txtNombre.TabIndex = 18;
@@ -221,7 +221,7 @@
             // 
             // numPrecio
             // 
-            this.numPrecio.Location = new System.Drawing.Point(193, 144);
+            this.numPrecio.Location = new System.Drawing.Point(312, 146);
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(69, 27);
             this.numPrecio.TabIndex = 22;
@@ -231,7 +231,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblPrecio.Location = new System.Drawing.Point(189, 119);
+            this.lblPrecio.Location = new System.Drawing.Point(308, 110);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(57, 22);
             this.lblPrecio.TabIndex = 20;
@@ -243,7 +243,7 @@
             this.btnAgregar.Enabled = false;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(767, 224);
+            this.btnAgregar.Location = new System.Drawing.Point(633, 335);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(121, 46);
             this.btnAgregar.TabIndex = 28;

@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsConexión.cs" />
+    <Compile Include="clsInicioSesión.cs" />
     <Compile Include="clsProducto.cs" />
     <Compile Include="frmAgregarProducto.cs">
       <SubType>Form</SubType>
@@ -69,6 +70,12 @@
     <Compile Include="frmIncio.Designer.cs">
       <DependentUpon>frmIncio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIncio.resx">
       <DependentUpon>frmIncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarProducto.resx">
       <DependentUpon>frmModificarProducto.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace prySernaPConexionBD2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmIncio());
+            Application.Run(new frmLogin());
         }
     }
 }
