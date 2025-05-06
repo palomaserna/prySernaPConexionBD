@@ -49,6 +49,34 @@ namespace prySernaPConexionBD2
             v.ShowDialog();
         }
 
-       
+        private void agregarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAgregarContacto v=new frmAgregarContacto();
+            v.ShowDialog();
+        }
+
+        private void eliminarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmEliminarContacto v=new frmEliminarContacto();
+            v.ShowDialog();
+        }
+
+        private void modificarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmModificarContacto v=new frmModificarContacto();
+            v.ShowDialog();     
+        }
+
+        private void verTodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerProductos v=new frmVerProductos();
+            v.ShowDialog();
+        }
+
+        private void verTodoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmVerContactos v=new frmVerContactos();
+            v.ShowDialog();
+        }
     }
 }

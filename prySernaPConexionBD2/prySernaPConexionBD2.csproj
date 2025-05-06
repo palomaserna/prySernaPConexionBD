@@ -50,13 +50,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsConexión.cs" />
+    <Compile Include="clsContactos.cs" />
     <Compile Include="clsInicioSesión.cs" />
     <Compile Include="clsProducto.cs" />
+    <Compile Include="frmAgregarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarContacto.Designer.cs">
+      <DependentUpon>frmAgregarContacto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAgregarProducto.Designer.cs">
       <DependentUpon>frmAgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarContacto.Designer.cs">
+      <DependentUpon>frmEliminarContacto.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEliminarProducto.cs">
       <SubType>Form</SubType>
@@ -76,16 +89,40 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificarContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarContacto.Designer.cs">
+      <DependentUpon>frmModificarContacto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModificarProducto.Designer.cs">
       <DependentUpon>frmModificarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVerContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerContactos.Designer.cs">
+      <DependentUpon>frmVerContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerProductos.Designer.cs">
+      <DependentUpon>frmVerProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarContacto.resx">
+      <DependentUpon>frmAgregarContacto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarProducto.resx">
       <DependentUpon>frmAgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarContacto.resx">
+      <DependentUpon>frmEliminarContacto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEliminarProducto.resx">
       <DependentUpon>frmEliminarProducto.cs</DependentUpon>
@@ -96,8 +133,17 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarContacto.resx">
+      <DependentUpon>frmModificarContacto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModificarProducto.resx">
       <DependentUpon>frmModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerContactos.resx">
+      <DependentUpon>frmVerContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerProductos.resx">
+      <DependentUpon>frmVerProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

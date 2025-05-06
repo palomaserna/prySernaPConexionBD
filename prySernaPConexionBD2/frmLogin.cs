@@ -15,7 +15,7 @@ namespace prySernaPConexionBD2
         public frmLogin()
         {
             InitializeComponent();
-            //int IntentosFallidos = 0;
+           
         }
         int IntentosFallidos = 0;
 
@@ -35,7 +35,6 @@ namespace prySernaPConexionBD2
         {
             clsInicioSesión Inicio = new clsInicioSesión();
             clsConexión conexión = new clsConexión();
-
             Inicio.Usuario = txtUsuario.Text;
             Inicio.Contraseña = txtContraseña.Text;
             bool InicioExitoso = conexión.Iniciar(Inicio);
@@ -47,8 +46,7 @@ namespace prySernaPConexionBD2
                 this.Hide();
             }
             else
-            {
-               
+            {  
                 IntentosFallidos++;
 
                 MessageBox.Show($"Usuario o Contraseña incorrecto . Intento{IntentosFallidos} de 3");

@@ -39,6 +39,8 @@
             this.agregarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verTodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verTodoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +56,7 @@
             this.contactosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1195, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1195, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,7 +65,7 @@
             this.comercioToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comercioToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.comercioToolStripMenuItem.Name = "comercioToolStripMenuItem";
-            this.comercioToolStripMenuItem.Size = new System.Drawing.Size(111, 32);
+            this.comercioToolStripMenuItem.Size = new System.Drawing.Size(111, 29);
             this.comercioToolStripMenuItem.Text = "COMERCIO";
             // 
             // productosToolStripMenuItem
@@ -71,11 +73,12 @@
             this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem,
             this.eliminarToolStripMenuItem,
-            this.modificarToolStripMenuItem});
+            this.modificarToolStripMenuItem,
+            this.verTodoToolStripMenuItem});
             this.productosToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.productosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(123, 32);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(123, 29);
             this.productosToolStripMenuItem.Text = "PRODUCTOS";
             // 
             // agregarToolStripMenuItem
@@ -84,7 +87,7 @@
             this.agregarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.agregarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("agregarToolStripMenuItem.Image")));
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.agregarToolStripMenuItem.Text = "Agregar";
             this.agregarToolStripMenuItem.Click += new System.EventHandler(this.agregarToolStripMenuItem_Click);
             // 
@@ -94,7 +97,7 @@
             this.eliminarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -104,7 +107,7 @@
             this.modificarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.modificarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("modificarToolStripMenuItem.Image")));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(191, 34);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.modificarToolStripMenuItem.Text = "Modificar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
@@ -113,30 +116,63 @@
             this.contactosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarToolStripMenuItem1,
             this.eliminarToolStripMenuItem1,
-            this.modificarToolStripMenuItem1});
+            this.modificarToolStripMenuItem1,
+            this.verTodoToolStripMenuItem1});
             this.contactosToolStripMenuItem.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.contactosToolStripMenuItem.Name = "contactosToolStripMenuItem";
-            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(120, 32);
+            this.contactosToolStripMenuItem.Size = new System.Drawing.Size(120, 29);
             this.contactosToolStripMenuItem.Text = "CONTACTOS";
             // 
             // agregarToolStripMenuItem1
             // 
+            this.agregarToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.agregarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.agregarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("agregarToolStripMenuItem1.Image")));
             this.agregarToolStripMenuItem1.Name = "agregarToolStripMenuItem1";
             this.agregarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.agregarToolStripMenuItem1.Text = "Agregar";
+            this.agregarToolStripMenuItem1.Click += new System.EventHandler(this.agregarToolStripMenuItem1_Click);
             // 
             // eliminarToolStripMenuItem1
             // 
+            this.eliminarToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.eliminarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.eliminarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem1.Image")));
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
             this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
+            this.eliminarToolStripMenuItem1.Click += new System.EventHandler(this.eliminarToolStripMenuItem1_Click);
             // 
             // modificarToolStripMenuItem1
             // 
+            this.modificarToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.modificarToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.modificarToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("modificarToolStripMenuItem1.Image")));
             this.modificarToolStripMenuItem1.Name = "modificarToolStripMenuItem1";
             this.modificarToolStripMenuItem1.Size = new System.Drawing.Size(191, 34);
             this.modificarToolStripMenuItem1.Text = "Modificar";
+            this.modificarToolStripMenuItem1.Click += new System.EventHandler(this.modificarToolStripMenuItem1_Click);
+            // 
+            // verTodoToolStripMenuItem
+            // 
+            this.verTodoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.verTodoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.verTodoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("verTodoToolStripMenuItem.Image")));
+            this.verTodoToolStripMenuItem.Name = "verTodoToolStripMenuItem";
+            this.verTodoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.verTodoToolStripMenuItem.Text = "Ver Todo";
+            this.verTodoToolStripMenuItem.Click += new System.EventHandler(this.verTodoToolStripMenuItem_Click);
+            // 
+            // verTodoToolStripMenuItem1
+            // 
+            this.verTodoToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.verTodoToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.verTodoToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("verTodoToolStripMenuItem1.Image")));
+            this.verTodoToolStripMenuItem1.Name = "verTodoToolStripMenuItem1";
+            this.verTodoToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.verTodoToolStripMenuItem1.Text = "Ver Todo";
+            this.verTodoToolStripMenuItem1.Click += new System.EventHandler(this.verTodoToolStripMenuItem1_Click);
             // 
             // frmIncio
             // 
@@ -170,6 +206,8 @@
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem verTodoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verTodoToolStripMenuItem1;
     }
 }
 

@@ -37,7 +37,10 @@ namespace prySernaPConexionBD2
                 this.KeyDown += TeclaESC;
             }
             btnModificar.Enabled = false;
-            
+            numPrecio.Maximum = 100000000; 
+           // numPrecio.Minimum = 1;         
+
+
         }
         private void TeclaESC(object sender, KeyEventArgs e)
         {
@@ -126,10 +129,23 @@ namespace prySernaPConexionBD2
                 btnModificar.Enabled = false;
             }
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void dgvProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                
+                DataGridViewRow fila = dgvProductos.Rows[e.RowIndex];
+                numCodigo.Value = Convert.ToInt32(fila.Cells["Codigo"].Value);
+                txtNombre.Text = fila.Cells["Nombre"].Value.ToString();
+                txtDescripcion.Text = fila.Cells["Descripcion"].Value.ToString();
+                numPrecio.Value = Convert.ToDecimal(fila.Cells["Precio"].Value);
+                numStock.Value = Convert.ToInt32(fila.Cells["Stock"].Value);
+                cmbCategorias.SelectedValue = Convert.ToInt32(fila.Cells["CategoriaId"].Value);
 
+                //cmbCategorias.SelectedItem = fila.Cells["CategoriaId"].Value.ToString();
+            }
         }
+
+        
     }
 }
