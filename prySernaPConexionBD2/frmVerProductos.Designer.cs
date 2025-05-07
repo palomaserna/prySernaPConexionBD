@@ -57,7 +57,8 @@
             this.dgvProductos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductos.EnableHeadersVisualStyles = false;
             this.dgvProductos.GridColor = System.Drawing.Color.Gray;
-            this.dgvProductos.Location = new System.Drawing.Point(47, 63);
+            this.dgvProductos.Location = new System.Drawing.Point(31, 41);
+            this.dgvProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -70,7 +71,7 @@
             this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductos.RowHeadersWidth = 62;
             this.dgvProductos.RowTemplate.Height = 28;
-            this.dgvProductos.Size = new System.Drawing.Size(925, 563);
+            this.dgvProductos.Size = new System.Drawing.Size(617, 366);
             this.dgvProductos.TabIndex = 1;
             // 
             // lblIndicador
@@ -79,22 +80,24 @@
             this.lblIndicador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
             this.lblIndicador.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblIndicador.Location = new System.Drawing.Point(42, 9);
+            this.lblIndicador.Location = new System.Drawing.Point(28, 6);
+            this.lblIndicador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicador.Name = "lblIndicador";
-            this.lblIndicador.Size = new System.Drawing.Size(197, 29);
+            this.lblIndicador.Size = new System.Drawing.Size(132, 20);
             this.lblIndicador.TabIndex = 19;
             this.lblIndicador.Text = "Tabla de Productos";
             // 
             // frmVerProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1118, 681);
+            this.ClientSize = new System.Drawing.Size(745, 443);
             this.Controls.Add(this.lblIndicador);
             this.Controls.Add(this.dgvProductos);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmVerProductos";
-            this.Text = "frmVerProductos";
+            this.Text = "VerProductos";
             this.Load += new System.EventHandler(this.frmVerProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);

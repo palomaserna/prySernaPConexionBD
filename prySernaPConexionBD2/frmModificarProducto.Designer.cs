@@ -60,9 +60,10 @@
             this.lblInstrucción.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblInstrucción.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstrucción.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblInstrucción.Location = new System.Drawing.Point(12, 9);
+            this.lblInstrucción.Location = new System.Drawing.Point(8, 6);
+            this.lblInstrucción.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInstrucción.Name = "lblInstrucción";
-            this.lblInstrucción.Size = new System.Drawing.Size(480, 29);
+            this.lblInstrucción.Size = new System.Drawing.Size(321, 20);
             this.lblInstrucción.TabIndex = 4;
             this.lblInstrucción.Text = "Complete los campos para modificar un produto";
             // 
@@ -72,17 +73,19 @@
             this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCodigo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCodigo.Location = new System.Drawing.Point(6, 31);
+            this.lblCodigo.Location = new System.Drawing.Point(4, 20);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(61, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(41, 16);
             this.lblCodigo.TabIndex = 15;
             this.lblCodigo.Text = "Código";
             // 
             // numCodigo
             // 
-            this.numCodigo.Location = new System.Drawing.Point(10, 56);
+            this.numCodigo.Location = new System.Drawing.Point(7, 36);
+            this.numCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numCodigo.Name = "numCodigo";
-            this.numCodigo.Size = new System.Drawing.Size(69, 27);
+            this.numCodigo.Size = new System.Drawing.Size(46, 21);
             this.numCodigo.TabIndex = 16;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
@@ -91,17 +94,19 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblNombre.Location = new System.Drawing.Point(314, 31);
+            this.lblNombre.Location = new System.Drawing.Point(209, 20);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(66, 22);
+            this.lblNombre.Size = new System.Drawing.Size(45, 16);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombre";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(318, 56);
+            this.txtNombre.Location = new System.Drawing.Point(212, 36);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(127, 27);
+            this.txtNombre.Size = new System.Drawing.Size(86, 21);
             this.txtNombre.TabIndex = 18;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -110,9 +115,10 @@
             this.lblDescripción.AutoSize = true;
             this.lblDescripción.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripción.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblDescripción.Location = new System.Drawing.Point(6, 110);
+            this.lblDescripción.Location = new System.Drawing.Point(4, 72);
+            this.lblDescripción.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripción.Name = "lblDescripción";
-            this.lblDescripción.Size = new System.Drawing.Size(98, 22);
+            this.lblDescripción.Size = new System.Drawing.Size(66, 16);
             this.lblDescripción.TabIndex = 19;
             this.lblDescripción.Text = "Descripción";
             // 
@@ -121,25 +127,28 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblPrecio.Location = new System.Drawing.Point(314, 110);
+            this.lblPrecio.Location = new System.Drawing.Point(209, 72);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(57, 22);
+            this.lblPrecio.Size = new System.Drawing.Size(38, 16);
             this.lblPrecio.TabIndex = 20;
             this.lblPrecio.Text = "Precio";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(10, 146);
+            this.txtDescripcion.Location = new System.Drawing.Point(7, 95);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(164, 27);
+            this.txtDescripcion.Size = new System.Drawing.Size(111, 21);
             this.txtDescripcion.TabIndex = 21;
             this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // numPrecio
             // 
-            this.numPrecio.Location = new System.Drawing.Point(318, 146);
+            this.numPrecio.Location = new System.Drawing.Point(212, 95);
+            this.numPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numPrecio.Name = "numPrecio";
-            this.numPrecio.Size = new System.Drawing.Size(69, 27);
+            this.numPrecio.Size = new System.Drawing.Size(46, 21);
             this.numPrecio.TabIndex = 22;
             this.numPrecio.ValueChanged += new System.EventHandler(this.numPrecio_ValueChanged);
             // 
@@ -148,9 +157,10 @@
             this.lblStock.AutoSize = true;
             this.lblStock.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblStock.Location = new System.Drawing.Point(6, 197);
+            this.lblStock.Location = new System.Drawing.Point(4, 128);
+            this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(51, 22);
+            this.lblStock.Size = new System.Drawing.Size(35, 16);
             this.lblStock.TabIndex = 23;
             this.lblStock.Text = "Stock";
             // 
@@ -159,26 +169,29 @@
             this.lblCategorías.AutoSize = true;
             this.lblCategorías.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorías.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCategorías.Location = new System.Drawing.Point(314, 197);
+            this.lblCategorías.Location = new System.Drawing.Point(209, 128);
+            this.lblCategorías.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategorías.Name = "lblCategorías";
-            this.lblCategorías.Size = new System.Drawing.Size(89, 22);
+            this.lblCategorías.Size = new System.Drawing.Size(61, 16);
             this.lblCategorías.TabIndex = 24;
             this.lblCategorías.Text = "Categorías";
             // 
             // numStock
             // 
-            this.numStock.Location = new System.Drawing.Point(10, 238);
+            this.numStock.Location = new System.Drawing.Point(7, 155);
+            this.numStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numStock.Name = "numStock";
-            this.numStock.Size = new System.Drawing.Size(69, 27);
+            this.numStock.Size = new System.Drawing.Size(46, 21);
             this.numStock.TabIndex = 25;
             this.numStock.ValueChanged += new System.EventHandler(this.numStock_ValueChanged);
             // 
             // cmbCategorias
             // 
             this.cmbCategorias.FormattingEnabled = true;
-            this.cmbCategorias.Location = new System.Drawing.Point(318, 237);
+            this.cmbCategorias.Location = new System.Drawing.Point(212, 154);
+            this.cmbCategorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategorias.Name = "cmbCategorias";
-            this.cmbCategorias.Size = new System.Drawing.Size(121, 28);
+            this.cmbCategorias.Size = new System.Drawing.Size(82, 23);
             this.cmbCategorias.TabIndex = 26;
             this.cmbCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbCategorias_SelectedIndexChanged);
             // 
@@ -188,9 +201,10 @@
             this.btnModificar.Enabled = false;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(600, 311);
+            this.btnModificar.Location = new System.Drawing.Point(400, 202);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(121, 46);
+            this.btnModificar.Size = new System.Drawing.Size(81, 30);
             this.btnModificar.TabIndex = 27;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -212,9 +226,11 @@
             this.grpCampos.Controls.Add(this.lblPrecio);
             this.grpCampos.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCampos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.grpCampos.Location = new System.Drawing.Point(36, 58);
+            this.grpCampos.Location = new System.Drawing.Point(24, 38);
+            this.grpCampos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpCampos.Name = "grpCampos";
-            this.grpCampos.Size = new System.Drawing.Size(547, 299);
+            this.grpCampos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCampos.Size = new System.Drawing.Size(365, 194);
             this.grpCampos.TabIndex = 28;
             this.grpCampos.TabStop = false;
             this.grpCampos.Text = "Campos";
@@ -242,7 +258,8 @@
             this.dgvProductos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductos.EnableHeadersVisualStyles = false;
             this.dgvProductos.GridColor = System.Drawing.Color.Gray;
-            this.dgvProductos.Location = new System.Drawing.Point(36, 363);
+            this.dgvProductos.Location = new System.Drawing.Point(24, 236);
+            this.dgvProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -255,22 +272,23 @@
             this.dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductos.RowHeadersWidth = 62;
             this.dgvProductos.RowTemplate.Height = 28;
-            this.dgvProductos.Size = new System.Drawing.Size(709, 387);
+            this.dgvProductos.Size = new System.Drawing.Size(473, 252);
             this.dgvProductos.TabIndex = 27;
             this.dgvProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellDoubleClick);
             // 
             // frmModificarProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(866, 762);
+            this.ClientSize = new System.Drawing.Size(577, 487);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.grpCampos);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.lblInstrucción);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmModificarProducto";
-            this.Text = "frmModificarProducto";
+            this.Text = "ModificarProducto";
             this.Load += new System.EventHandler(this.frmModificarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();

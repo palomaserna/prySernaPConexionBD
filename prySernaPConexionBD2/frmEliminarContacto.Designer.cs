@@ -46,9 +46,10 @@
             this.lblIndicador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblIndicador.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblIndicador.Location = new System.Drawing.Point(31, 28);
+            this.lblIndicador.Location = new System.Drawing.Point(21, 18);
+            this.lblIndicador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicador.Name = "lblIndicador";
-            this.lblIndicador.Size = new System.Drawing.Size(465, 29);
+            this.lblIndicador.Size = new System.Drawing.Size(313, 20);
             this.lblIndicador.TabIndex = 20;
             this.lblIndicador.Text = "Complete los campos para agregar el contacto";
             // 
@@ -58,17 +59,19 @@
             this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCodigo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCodigo.Location = new System.Drawing.Point(41, 94);
+            this.lblCodigo.Location = new System.Drawing.Point(27, 61);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(61, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(41, 16);
             this.lblCodigo.TabIndex = 21;
             this.lblCodigo.Text = "Código";
             // 
             // numCodigo
             // 
-            this.numCodigo.Location = new System.Drawing.Point(147, 94);
+            this.numCodigo.Location = new System.Drawing.Point(98, 61);
+            this.numCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numCodigo.Name = "numCodigo";
-            this.numCodigo.Size = new System.Drawing.Size(127, 26);
+            this.numCodigo.Size = new System.Drawing.Size(85, 20);
             this.numCodigo.TabIndex = 22;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
@@ -93,7 +96,8 @@
             this.dgvContactos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvContactos.EnableHeadersVisualStyles = false;
             this.dgvContactos.GridColor = System.Drawing.Color.Gray;
-            this.dgvContactos.Location = new System.Drawing.Point(45, 161);
+            this.dgvContactos.Location = new System.Drawing.Point(30, 105);
+            this.dgvContactos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvContactos.Name = "dgvContactos";
             this.dgvContactos.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -106,7 +110,7 @@
             this.dgvContactos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvContactos.RowHeadersWidth = 62;
             this.dgvContactos.RowTemplate.Height = 28;
-            this.dgvContactos.Size = new System.Drawing.Size(695, 387);
+            this.dgvContactos.Size = new System.Drawing.Size(463, 252);
             this.dgvContactos.TabIndex = 28;
             // 
             // btnEliminar
@@ -115,9 +119,10 @@
             this.btnEliminar.Enabled = false;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(619, 94);
+            this.btnEliminar.Location = new System.Drawing.Point(413, 61);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(121, 46);
+            this.btnEliminar.Size = new System.Drawing.Size(81, 30);
             this.btnEliminar.TabIndex = 30;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -125,17 +130,18 @@
             // 
             // frmEliminarContacto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1105, 693);
+            this.ClientSize = new System.Drawing.Size(737, 450);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dgvContactos);
             this.Controls.Add(this.numCodigo);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblIndicador);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEliminarContacto";
-            this.Text = "frmEliminarContacto";
+            this.Text = "EliminarContacto";
             this.Load += new System.EventHandler(this.frmEliminarContacto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContactos)).EndInit();

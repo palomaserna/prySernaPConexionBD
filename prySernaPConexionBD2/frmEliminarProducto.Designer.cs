@@ -42,9 +42,10 @@
             // 
             // numCodigo
             // 
-            this.numCodigo.Location = new System.Drawing.Point(96, 111);
+            this.numCodigo.Location = new System.Drawing.Point(64, 72);
+            this.numCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numCodigo.Name = "numCodigo";
-            this.numCodigo.Size = new System.Drawing.Size(124, 26);
+            this.numCodigo.Size = new System.Drawing.Size(83, 20);
             this.numCodigo.TabIndex = 11;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
@@ -69,7 +70,8 @@
             this.dgvProductosE.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvProductosE.EnableHeadersVisualStyles = false;
             this.dgvProductosE.GridColor = System.Drawing.Color.Gray;
-            this.dgvProductosE.Location = new System.Drawing.Point(24, 209);
+            this.dgvProductosE.Location = new System.Drawing.Point(16, 136);
+            this.dgvProductosE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvProductosE.Name = "dgvProductosE";
             this.dgvProductosE.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -82,7 +84,7 @@
             this.dgvProductosE.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProductosE.RowHeadersWidth = 62;
             this.dgvProductosE.RowTemplate.Height = 28;
-            this.dgvProductosE.Size = new System.Drawing.Size(739, 387);
+            this.dgvProductosE.Size = new System.Drawing.Size(493, 252);
             this.dgvProductosE.TabIndex = 24;
             // 
             // lblIndicador
@@ -91,9 +93,10 @@
             this.lblIndicador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblIndicador.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblIndicador.Location = new System.Drawing.Point(28, 45);
+            this.lblIndicador.Location = new System.Drawing.Point(19, 29);
+            this.lblIndicador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicador.Name = "lblIndicador";
-            this.lblIndicador.Size = new System.Drawing.Size(532, 29);
+            this.lblIndicador.Size = new System.Drawing.Size(355, 20);
             this.lblIndicador.TabIndex = 25;
             this.lblIndicador.Text = "Seleccione el código del producto que desea eliminar";
             // 
@@ -103,9 +106,10 @@
             this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCodigo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCodigo.Location = new System.Drawing.Point(29, 111);
+            this.lblCodigo.Location = new System.Drawing.Point(19, 72);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(61, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(41, 16);
             this.lblCodigo.TabIndex = 26;
             this.lblCodigo.Text = "Código";
             // 
@@ -115,26 +119,28 @@
             this.btnEliminar.Enabled = false;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(305, 97);
+            this.btnEliminar.Location = new System.Drawing.Point(203, 63);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(121, 46);
+            this.btnEliminar.Size = new System.Drawing.Size(81, 30);
             this.btnEliminar.TabIndex = 29;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // frmEliminarProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(985, 660);
+            this.ClientSize = new System.Drawing.Size(657, 429);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblIndicador);
             this.Controls.Add(this.dgvProductosE);
             this.Controls.Add(this.numCodigo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEliminarProducto";
-            this.Text = "frmEliminarProducto";
+            this.Text = "EliminarProducto";
             this.Load += new System.EventHandler(this.frmEliminarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosE)).EndInit();

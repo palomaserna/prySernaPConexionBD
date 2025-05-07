@@ -58,9 +58,10 @@
             this.lblIndicador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblIndicador.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIndicador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblIndicador.Location = new System.Drawing.Point(28, 26);
+            this.lblIndicador.Location = new System.Drawing.Point(19, 17);
+            this.lblIndicador.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIndicador.Name = "lblIndicador";
-            this.lblIndicador.Size = new System.Drawing.Size(465, 29);
+            this.lblIndicador.Size = new System.Drawing.Size(313, 20);
             this.lblIndicador.TabIndex = 20;
             this.lblIndicador.Text = "Complete los campos para agregar el contacto";
             // 
@@ -80,26 +81,30 @@
             this.grpModificarC.Controls.Add(this.txtApellido);
             this.grpModificarC.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpModificarC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.grpModificarC.Location = new System.Drawing.Point(33, 78);
+            this.grpModificarC.Location = new System.Drawing.Point(22, 51);
+            this.grpModificarC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpModificarC.Name = "grpModificarC";
-            this.grpModificarC.Size = new System.Drawing.Size(553, 299);
+            this.grpModificarC.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpModificarC.Size = new System.Drawing.Size(369, 194);
             this.grpModificarC.TabIndex = 31;
             this.grpModificarC.TabStop = false;
             this.grpModificarC.Text = "Campos";
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(10, 238);
+            this.txtCorreo.Location = new System.Drawing.Point(7, 155);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(127, 27);
+            this.txtCorreo.Size = new System.Drawing.Size(86, 21);
             this.txtCorreo.TabIndex = 29;
             this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // txtTeléfono
             // 
-            this.txtTeléfono.Location = new System.Drawing.Point(312, 146);
+            this.txtTeléfono.Location = new System.Drawing.Point(208, 95);
+            this.txtTeléfono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTeléfono.Name = "txtTeléfono";
-            this.txtTeléfono.Size = new System.Drawing.Size(127, 27);
+            this.txtTeléfono.Size = new System.Drawing.Size(86, 21);
             this.txtTeléfono.TabIndex = 28;
             this.txtTeléfono.TextChanged += new System.EventHandler(this.txtTeléfono_TextChanged);
             // 
@@ -108,9 +113,10 @@
             this.lblTeléfono.AutoSize = true;
             this.lblTeléfono.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeléfono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblTeléfono.Location = new System.Drawing.Point(312, 110);
+            this.lblTeléfono.Location = new System.Drawing.Point(208, 72);
+            this.lblTeléfono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeléfono.Name = "lblTeléfono";
-            this.lblTeléfono.Size = new System.Drawing.Size(75, 22);
+            this.lblTeléfono.Size = new System.Drawing.Size(50, 16);
             this.lblTeléfono.TabIndex = 27;
             this.lblTeléfono.Text = "Teléfono ";
             // 
@@ -120,26 +126,29 @@
             this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblCodigo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCodigo.Location = new System.Drawing.Point(6, 31);
+            this.lblCodigo.Location = new System.Drawing.Point(4, 20);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(61, 22);
+            this.lblCodigo.Size = new System.Drawing.Size(41, 16);
             this.lblCodigo.TabIndex = 15;
             this.lblCodigo.Text = "Código";
             // 
             // numCodigo
             // 
-            this.numCodigo.Location = new System.Drawing.Point(10, 56);
+            this.numCodigo.Location = new System.Drawing.Point(7, 36);
+            this.numCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numCodigo.Name = "numCodigo";
-            this.numCodigo.Size = new System.Drawing.Size(69, 27);
+            this.numCodigo.Size = new System.Drawing.Size(46, 21);
             this.numCodigo.TabIndex = 16;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
             // cmbCategorias
             // 
             this.cmbCategorias.FormattingEnabled = true;
-            this.cmbCategorias.Location = new System.Drawing.Point(312, 237);
+            this.cmbCategorias.Location = new System.Drawing.Point(208, 154);
+            this.cmbCategorias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategorias.Name = "cmbCategorias";
-            this.cmbCategorias.Size = new System.Drawing.Size(121, 28);
+            this.cmbCategorias.Size = new System.Drawing.Size(82, 23);
             this.cmbCategorias.TabIndex = 26;
             this.cmbCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbCategorias_SelectedIndexChanged);
             // 
@@ -148,9 +157,10 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblNombre.Location = new System.Drawing.Point(308, 31);
+            this.lblNombre.Location = new System.Drawing.Point(205, 20);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(66, 22);
+            this.lblNombre.Size = new System.Drawing.Size(45, 16);
             this.lblNombre.TabIndex = 17;
             this.lblNombre.Text = "Nombre";
             // 
@@ -159,17 +169,19 @@
             this.lblCategorías.AutoSize = true;
             this.lblCategorías.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorías.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCategorías.Location = new System.Drawing.Point(312, 197);
+            this.lblCategorías.Location = new System.Drawing.Point(208, 128);
+            this.lblCategorías.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategorías.Name = "lblCategorías";
-            this.lblCategorías.Size = new System.Drawing.Size(89, 22);
+            this.lblCategorías.Size = new System.Drawing.Size(61, 16);
             this.lblCategorías.TabIndex = 24;
             this.lblCategorías.Text = "Categorías";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(312, 56);
+            this.txtNombre.Location = new System.Drawing.Point(208, 36);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(127, 27);
+            this.txtNombre.Size = new System.Drawing.Size(86, 21);
             this.txtNombre.TabIndex = 18;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -178,9 +190,10 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblApellido.Location = new System.Drawing.Point(6, 110);
+            this.lblApellido.Location = new System.Drawing.Point(4, 72);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(70, 22);
+            this.lblApellido.Size = new System.Drawing.Size(46, 16);
             this.lblApellido.TabIndex = 19;
             this.lblApellido.Text = "Apellido";
             // 
@@ -189,17 +202,19 @@
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.lblCorreo.Location = new System.Drawing.Point(6, 197);
+            this.lblCorreo.Location = new System.Drawing.Point(4, 128);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(59, 22);
+            this.lblCorreo.Size = new System.Drawing.Size(40, 16);
             this.lblCorreo.TabIndex = 23;
             this.lblCorreo.Text = "Correo";
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(10, 146);
+            this.txtApellido.Location = new System.Drawing.Point(7, 95);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(127, 27);
+            this.txtApellido.Size = new System.Drawing.Size(86, 21);
             this.txtApellido.TabIndex = 21;
             this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
@@ -209,9 +224,10 @@
             this.btnModificar.Enabled = false;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Impact", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(601, 331);
+            this.btnModificar.Location = new System.Drawing.Point(401, 215);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(121, 46);
+            this.btnModificar.Size = new System.Drawing.Size(81, 30);
             this.btnModificar.TabIndex = 30;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -238,7 +254,8 @@
             this.dgvContactos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvContactos.EnableHeadersVisualStyles = false;
             this.dgvContactos.GridColor = System.Drawing.Color.Gray;
-            this.dgvContactos.Location = new System.Drawing.Point(27, 396);
+            this.dgvContactos.Location = new System.Drawing.Point(18, 257);
+            this.dgvContactos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvContactos.Name = "dgvContactos";
             this.dgvContactos.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -251,22 +268,23 @@
             this.dgvContactos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvContactos.RowHeadersWidth = 62;
             this.dgvContactos.RowTemplate.Height = 28;
-            this.dgvContactos.Size = new System.Drawing.Size(695, 387);
+            this.dgvContactos.Size = new System.Drawing.Size(463, 252);
             this.dgvContactos.TabIndex = 32;
             this.dgvContactos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContactos_CellDoubleClick);
             // 
             // frmModificarContacto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(997, 858);
+            this.ClientSize = new System.Drawing.Size(665, 487);
             this.Controls.Add(this.dgvContactos);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.grpModificarC);
             this.Controls.Add(this.lblIndicador);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmModificarContacto";
-            this.Text = "frmModificarContacto";
+            this.Text = "ModificarContacto";
             this.Load += new System.EventHandler(this.frmModificarContacto_Load);
             this.grpModificarC.ResumeLayout(false);
             this.grpModificarC.PerformLayout();
