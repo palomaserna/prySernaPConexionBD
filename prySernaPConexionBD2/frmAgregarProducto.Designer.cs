@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.lblIndicador = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpCampos = new System.Windows.Forms.GroupBox();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.numCodigo = new System.Windows.Forms.NumericUpDown();
             this.cmbCategorias = new System.Windows.Forms.ComboBox();
@@ -48,7 +48,7 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpCampos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
@@ -104,28 +104,28 @@
             this.lblIndicador.TabIndex = 18;
             this.lblIndicador.Text = "Complete los campos para agregar un produto";
             // 
-            // groupBox1
+            // grpCampos
             // 
-            this.groupBox1.Controls.Add(this.lblCodigo);
-            this.groupBox1.Controls.Add(this.numCodigo);
-            this.groupBox1.Controls.Add(this.cmbCategorias);
-            this.groupBox1.Controls.Add(this.lblNombre);
-            this.groupBox1.Controls.Add(this.lblCategorías);
-            this.groupBox1.Controls.Add(this.numStock);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.lblDescripción);
-            this.groupBox1.Controls.Add(this.lblStock);
-            this.groupBox1.Controls.Add(this.txtDescripcion);
-            this.groupBox1.Controls.Add(this.numPrecio);
-            this.groupBox1.Controls.Add(this.lblPrecio);
-            this.groupBox1.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.groupBox1.Location = new System.Drawing.Point(74, 82);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(553, 299);
-            this.groupBox1.TabIndex = 29;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Campos";
+            this.grpCampos.Controls.Add(this.lblCodigo);
+            this.grpCampos.Controls.Add(this.numCodigo);
+            this.grpCampos.Controls.Add(this.cmbCategorias);
+            this.grpCampos.Controls.Add(this.lblNombre);
+            this.grpCampos.Controls.Add(this.lblCategorías);
+            this.grpCampos.Controls.Add(this.numStock);
+            this.grpCampos.Controls.Add(this.txtNombre);
+            this.grpCampos.Controls.Add(this.lblDescripción);
+            this.grpCampos.Controls.Add(this.lblStock);
+            this.grpCampos.Controls.Add(this.txtDescripcion);
+            this.grpCampos.Controls.Add(this.numPrecio);
+            this.grpCampos.Controls.Add(this.lblPrecio);
+            this.grpCampos.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCampos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.grpCampos.Location = new System.Drawing.Point(74, 82);
+            this.grpCampos.Name = "grpCampos";
+            this.grpCampos.Size = new System.Drawing.Size(553, 299);
+            this.grpCampos.TabIndex = 29;
+            this.grpCampos.TabStop = false;
+            this.grpCampos.Text = "Campos";
             // 
             // lblCodigo
             // 
@@ -257,15 +257,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1135, 820);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpCampos);
             this.Controls.Add(this.lblIndicador);
             this.Controls.Add(this.dgvProductos);
             this.Name = "frmAgregarProducto";
             this.Text = "frmAgregarProducto";
             this.Load += new System.EventHandler(this.frmAgregarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpCampos.ResumeLayout(false);
+            this.grpCampos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
@@ -278,7 +278,7 @@
 
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Label lblIndicador;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpCampos;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.NumericUpDown numCodigo;
         private System.Windows.Forms.ComboBox cmbCategorias;

@@ -45,12 +45,12 @@
             this.numStock = new System.Windows.Forms.NumericUpDown();
             this.cmbCategorias = new System.Windows.Forms.ComboBox();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpCampos = new System.Windows.Forms.GroupBox();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpCampos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,28 +196,28 @@
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // groupBox1
+            // grpCampos
             // 
-            this.groupBox1.Controls.Add(this.lblCodigo);
-            this.groupBox1.Controls.Add(this.numCodigo);
-            this.groupBox1.Controls.Add(this.cmbCategorias);
-            this.groupBox1.Controls.Add(this.lblNombre);
-            this.groupBox1.Controls.Add(this.lblCategorías);
-            this.groupBox1.Controls.Add(this.numStock);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.lblDescripción);
-            this.groupBox1.Controls.Add(this.lblStock);
-            this.groupBox1.Controls.Add(this.txtDescripcion);
-            this.groupBox1.Controls.Add(this.numPrecio);
-            this.groupBox1.Controls.Add(this.lblPrecio);
-            this.groupBox1.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.groupBox1.Location = new System.Drawing.Point(36, 58);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(547, 299);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Campos";
+            this.grpCampos.Controls.Add(this.lblCodigo);
+            this.grpCampos.Controls.Add(this.numCodigo);
+            this.grpCampos.Controls.Add(this.cmbCategorias);
+            this.grpCampos.Controls.Add(this.lblNombre);
+            this.grpCampos.Controls.Add(this.lblCategorías);
+            this.grpCampos.Controls.Add(this.numStock);
+            this.grpCampos.Controls.Add(this.txtNombre);
+            this.grpCampos.Controls.Add(this.lblDescripción);
+            this.grpCampos.Controls.Add(this.lblStock);
+            this.grpCampos.Controls.Add(this.txtDescripcion);
+            this.grpCampos.Controls.Add(this.numPrecio);
+            this.grpCampos.Controls.Add(this.lblPrecio);
+            this.grpCampos.Font = new System.Drawing.Font("Impact", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCampos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.grpCampos.Location = new System.Drawing.Point(36, 58);
+            this.grpCampos.Name = "grpCampos";
+            this.grpCampos.Size = new System.Drawing.Size(547, 299);
+            this.grpCampos.TabIndex = 28;
+            this.grpCampos.TabStop = false;
+            this.grpCampos.Text = "Campos";
             // 
             // dgvProductos
             // 
@@ -266,7 +266,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(866, 762);
             this.Controls.Add(this.dgvProductos);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpCampos);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.lblInstrucción);
             this.Name = "frmModificarProducto";
@@ -275,8 +275,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStock)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpCampos.ResumeLayout(false);
+            this.grpCampos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -299,7 +299,7 @@
         private System.Windows.Forms.NumericUpDown numStock;
         private System.Windows.Forms.ComboBox cmbCategorias;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpCampos;
         private System.Windows.Forms.DataGridView dgvProductos;
     }
 }

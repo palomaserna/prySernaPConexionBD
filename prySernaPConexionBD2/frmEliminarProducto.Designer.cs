@@ -34,7 +34,7 @@
             this.numCodigo = new System.Windows.Forms.NumericUpDown();
             this.dgvProductosE = new System.Windows.Forms.DataGridView();
             this.lblIndicador = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductosE)).BeginInit();
@@ -97,17 +97,17 @@
             this.lblIndicador.TabIndex = 25;
             this.lblIndicador.Text = "Seleccione el código del producto que desea eliminar";
             // 
-            // label1
+            // lblCodigo
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
-            this.label1.Location = new System.Drawing.Point(29, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 22);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Código";
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCodigo.Font = new System.Drawing.Font("Impact", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(131)))), ((int)(((byte)(234)))));
+            this.lblCodigo.Location = new System.Drawing.Point(29, 111);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(61, 22);
+            this.lblCodigo.TabIndex = 26;
+            this.lblCodigo.Text = "Código";
             // 
             // btnEliminar
             // 
@@ -129,7 +129,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(985, 660);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblIndicador);
             this.Controls.Add(this.dgvProductosE);
             this.Controls.Add(this.numCodigo);
@@ -147,7 +147,7 @@
         private System.Windows.Forms.NumericUpDown numCodigo;
         private System.Windows.Forms.DataGridView dgvProductosE;
         private System.Windows.Forms.Label lblIndicador;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Button btnEliminar;
     }
 }
